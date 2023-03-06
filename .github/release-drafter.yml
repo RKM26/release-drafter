@@ -29,16 +29,16 @@ version-resolver:
 autolabeler:
   - label: 'chore'
     title:
-      - '/perf\/.+/'
+      - '/\bfix\b/'
   - label: 'bug'
     title:
-      - '/fix\/.+/'
+      - '/\bbug\b'
   - label: 'enhancement'
     title:
-      - '/feat\/.+/'
+      - '/\bfeat\b/'
   - label: 'major'
     title:
-      - '/major\/.+/'
+      - '/\bmajor\b/'
 template: |
   ## Changes
 
