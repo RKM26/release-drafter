@@ -32,7 +32,7 @@ autolabeler:
       - '/fix\:.+/'
   - label: 'bug'
     title:
-      - '/bug\:.+'
+      - '/bug\:.+/'
   - label: 'enhancement'
     title:
       - '/feat\:.+/'
