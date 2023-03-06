@@ -1,24 +1,32 @@
-name-template: 'v$RESOLVED_VERSION 🌈'
-tag-template: 'v$RESOLVED_VERSION'
 categories:
-  - title: '🚀 Features'
+  - title: ":boom: Breaking changes"
     labels:
-      - 'feature'
-      - 'enhancement'
-change-template: '- $TITLE @$AUTHOR (#$NUMBER)'
-change-title-escapes: '\<*_&' # You can add # and @ to disable mentions, and add ` to disable code blocks.
-version-resolver:
-  major:
+      - breaking
+  - title: ":fire: Removed"
+    label: removed
+  - title: ⚠️ Deprecated
+    label: deprecated
+  - title: ":sparkles: New features and improvements"
     labels:
-      - 'major'
-  minor:
+      - enhancement
+  - title: 🐛 Bug Fixes
     labels:
-      - 'minor'
-  patch:
+      - bug
+  - title: 📝 Documentation updates
+    label: documentation
+  - title: 📦 Dependency updates
+    label: dependencies
+  - title: 👻 Maintenance
+    label: chore
+  - title: 🚦 Tests
     labels:
-      - 'patch'
-  default: patch
-template: |
-  ## Changes
+      - test
+exclude-labels:
+  - skip-changelog
 
+template: |
+  <!-- Optional: add a release summary here -->
   $CHANGES
+replacers:
+  - search: '@dependabot-preview'
+    replace: '@dependabot'
