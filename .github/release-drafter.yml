@@ -36,6 +36,9 @@ autolabeler:
   - label: 'enhancement'
     title:
       - '/feat\/.+/'
+  - label: 'major'
+    title:
+      - '/major\/.+/'
 template: |
   ## Changes
 
