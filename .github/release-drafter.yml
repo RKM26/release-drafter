@@ -26,6 +26,7 @@ exclude-labels:
 
 template: |
   <!-- Optional: add a release summary here -->
+  Changes in release
   $CHANGES
 replacers:
   - search: '@dependabot-preview'
