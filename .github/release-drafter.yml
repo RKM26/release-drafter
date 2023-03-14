@@ -39,6 +39,9 @@ autolabeler:
   - label: 'major'
     title:
       - '/major/'
+  - label: 'minor'
+    title:
+      - '/minor/'
 template: |
   ## Changes
 
