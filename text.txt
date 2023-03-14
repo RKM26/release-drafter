@@ -1,2 +1,4 @@
 hi!
 die
+bug
+test
